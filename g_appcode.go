@@ -117,6 +117,7 @@ var typeMappingPostgres = map[string]string{
 	"date":                        "time.Time", // time
 	"time":                        "time.Time",
 	"timestamp":                   "time.Time",
+	"timestamp with time zone":    "time.Time", //timestamp with time zone
 	"timestamp without time zone": "time.Time",
 	"interval":                    "string",  // time interval, string for now
 	"real":                        "float32", // float & decimal
@@ -130,6 +131,7 @@ var typeMappingPostgres = map[string]string{
 	"USER-DEFINED":                "string",  // user defined
 	"uuid":                        "string",  // uuid
 	"json":                        "string",  // json
+    "json[]":                        "string[]", //json array
 }
 
 // Table represent a table in a database
